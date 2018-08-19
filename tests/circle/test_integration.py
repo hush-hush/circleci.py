@@ -22,7 +22,7 @@ class TestCircleCIApi(unittest.TestCase):
 
         resp = self.c.trigger_build('levlaz', 'circleci.py', params=params)
 
-        self.assertEqual(resp['build_parameters']['CIRCLE_JOB'], 'test')
+        self.assertEqual(resp['build_parameters']['CIRCLE_JOB'], 'build')
 
     def test_add_ssh_key(self):
 
